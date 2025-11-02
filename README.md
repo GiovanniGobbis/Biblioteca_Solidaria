@@ -5,7 +5,7 @@ Esta versão foca na **interface visual profissional, responsiva e acessível**,
 
 ---
 
-# Linguagens  Utilizadas
+# Tecnologias Utilizadas
 
 - HTML5 semântico  
 - CSS3 moderno (Flexbox e Grid)  
