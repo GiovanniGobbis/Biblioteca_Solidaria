@@ -1,7 +1,7 @@
 # Biblioteca Solidária
 
-Projeto de uma **biblioteca solidária** desenvolvido como atividade prática de HTML5 e CSS3.  
-O foco desta versão é a **interface visual profissional, responsiva e acessível**.
+Projeto de uma **biblioteca solidária**, desenvolvido como atividade prática de HTML5 e CSS3.  
+Esta versão foca na **interface visual profissional, responsiva e acessível**, com design consistente e funcionalidades completas.
 
 ---
 
@@ -9,19 +9,31 @@ O foco desta versão é a **interface visual profissional, responsiva e acessív
 
 - HTML5 semântico  
 - CSS3 moderno (Flexbox e Grid)  
-- JavaScript (menu hambúrguer e máscaras de formulário)  
+- JavaScript para interatividade (menu hambúrguer, máscaras de formulário)  
 - Google Fonts: [Inter](https://fonts.google.com/specimen/Inter)  
 
 ---
 
-## Funcionalidades Principais
+## Sistema de Design
 
-- Menu responsivo com dropdown e hambúrguer  
-- Layout flexível com CSS Grid e Flexbox  
-- Cards de projetos organizados e responsivos  
-- Formulário de cadastro com validação nativa e máscaras (CPF, telefone, CEP)  
-- Feedback visual para campos corretos/incorretos  
-- Imagens otimizadas e layout adaptável a diferentes telas  
+- **Paleta de cores**: tons suaves de azul, branco e cinza claro, garantindo boa leitura e conforto visual.  
+- **Tipografia**: fonte Inter, com hierarquia de 5 tamanhos diferentes.  
+- **Espaçamento modular**: 8px, 16px, 24px, 32px, 48px, 64px.  
+- **Grid**: 12 colunas para organizar o layout de forma consistente e responsiva.  
+
+---
+
+## Funcionalidades
+
+- **Menu responsivo** com dropdown e hambúrguer para telas pequenas  
+- **Layout flexível** com CSS Grid (estrutura principal) e Flexbox (componentes internos)  
+- **Cards de projetos** com informações sobre voluntariado e doações  
+- **Formulário de cadastro** com:
+  - Campos: Nome completo, E-mail, CPF, Telefone, Data de nascimento, Endereço, CEP, Cidade e Estado  
+  - Máscaras de entrada: CPF, Telefone, CEP  
+  - Validação nativa HTML5 e feedback visual  
+- **Imagens otimizadas** para web e responsivas  
+- **Componentes interativos**: botões com hover/focus/active, alertas de feedback, tags e emblemas  
 
 ---
 
