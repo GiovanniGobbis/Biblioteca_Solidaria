@@ -21,4 +21,5 @@ Projeto criado como parte da atividade prática de HTML5.
 ## Envio no GitHub
 1. Crie um repositório público chamado `biblioteca-solidaria`.
 2. Envie todos os arquivos e pastas.
-3. Copie o link do repositório.
+3. Copie o link do Repositório.
+   
