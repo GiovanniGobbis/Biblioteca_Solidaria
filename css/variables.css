@@ -1,0 +1,27 @@
+/* variables.css */
+:root{
+  --primary: #6fa3ef;
+  --primary-600: #4f81d0;
+  --accent: #f0f5fb;
+  --muted: #6b7280;
+  --white: #ffffff;
+  --bg: #f7fbff;
+  --danger: #e63946;
+
+  --font-xs: 12px;
+  --font-sm: 14px;
+  --font-md: 16px;
+  --font-lg: 20px;
+  --font-xl: 28px;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+
+  --container-max: 1100px;
+  --radius: 12px;
+  --shadow-soft: 0 8px 24px rgba(31,41,51,0.06);
+}

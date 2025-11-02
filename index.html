@@ -1,46 +1,92 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Biblioteca Solidária</title>
-<link rel="stylesheet" href="css/style.css">
-<script src="js/script.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Biblioteca Solidária — Início</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-<header>
-<nav class="navbar">
-<a href="index.html" class="logo">Biblioteca Solidária</a>
-<button class="hamburger" id="hamburger">&#9776;</button>
-<ul class="nav-links" id="nav-links">
-<li><a href="index.html">Início</a></li>
-<li><a href="projetos.html">Projetos</a></li>
-<li><a href="cadastro.html">Cadastro</a></li>
-</ul>
-</nav>
-</header>
-<main>
-<section class="hero">
-<h1>Compartilhe conhecimento, doe livros!</h1>
-<p>Nosso projeto incentiva a leitura e a solidariedade através da troca e doação de livros.</p>
-<img src="images/hero.jpg" alt="Pessoas lendo livros">
-</section>
-<section class="sobre">
-<h2>Sobre a Biblioteca Solidária</h2>
-<p>Somos uma organização sem fins lucrativos que atua em Campos do Jordão (SP), com o objetivo de promover o acesso à leitura para todos. Recebemos e distribuímos livros gratuitamente em escolas, comunidades e pontos culturais.</p>
-</section>
-<section class="contato">
-<h2>Contato</h2>
-<ul>
-<li><strong>Telefone:</strong> (11) 99678-0404</li>
-<li><strong>E-mail:</strong> bibliotecasolidaria@gmail.com</li>
-<li><strong>Cidade:</strong> Campos do Jordão - SP</li>
-</ul>
-</section>
-</main>
-<footer>
-<p>&copy; 2025 Biblioteca Solidária - Todos os direitos reservados.</p>
-</footer>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Biblioteca Solidária - Página inicial">
+        <img src="images/logo.webp" alt="Logo Biblioteca Solidária" class="logo">
+        <span class="brand-name">Biblioteca Solidária</span>
+      </a>
+
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Abrir menu" id="navToggle">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <nav id="primary-navigation" class="main-nav" role="navigation">
+        <ul class="nav-links" role="menubar">
+          <li role="none"><a role="menuitem" href="index.html">Início</a></li>
+          <li role="none"><a role="menuitem" href="projetos.html">Projetos Sociais</a></li>
+          <li class="dropdown" role="none">
+            <a href="#" class="dropbtn" aria-haspopup="true">Mais ▾</a>
+            <ul class="dropdown-menu" aria-label="submenu" role="menu">
+              <li role="none"><a role="menuitem" href="#sobre">Sobre</a></li>
+              <li role="none"><a role="menuitem" href="#contato">Contato</a></li>
+            </ul>
+          </li>
+          <li role="none"><a role="menuitem" class="cta" href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container grid" id="main-content">
+    <section class="hero grid-col-8" aria-labelledby="hero-title">
+      <picture>
+        <source srcset="images/hero.webp" type="image/webp">
+        <img src="images/hero.jpg" alt="Pessoas lendo livros" class="hero-img">
+      </picture>
+      <div class="hero-text">
+        <h1 id="hero-title">Compartilhe conhecimento. Doe livros. Faça parte.</h1>
+        <p class="lead">A Biblioteca Solidária conecta doadores, voluntários e comunidades em Campos do Jordão — SP.</p>
+        <p class="actions">
+          <a class="btn" href="projetos.html">Conheça projetos</a>
+          <a class="btn btn-outline" href="cadastro.html">Cadastre-se</a>
+        </p>
+      </div>
+    </section>
+
+    <aside class="contact card grid-col-4" id="contato" aria-labelledby="contato-title">
+      <h2 id="contato-title">Contato</h2>
+      <p><strong>Endereço:</strong> Rua das Letras, 123 — Campos do Jordão — SP</p>
+      <p><strong>Telefone:</strong> (11) 99678-0404</p>
+      <p><strong>E-mail:</strong> bibliotecasolidaria@gmail.com</p>
+    </aside>
+
+    <section class="about card grid-col-12" id="sobre" aria-labelledby="about-title">
+      <h2 id="about-title">O que fazemos</h2>
+      <p>Promovemos pontos de doação, oficinas de leitura e empréstimo de livros para comunidades e escolas.</p>
+    </section>
+
+    <section class="cards grid-col-12">
+      <article class="card project-card">
+        <h3>Doar livros</h3>
+        <p>Doe livros em bom estado nos pontos de coleta.</p>
+      </article>
+      <article class="card project-card">
+        <h3>Voluntariado</h3>
+        <p>Seja voluntário em eventos e oficinas de leitura.</p>
+      </article>
+      <article class="card project-card">
+        <h3>Parcerias</h3>
+        <p>Parcerias institucionais para ampliar nosso alcance.</p>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Biblioteca Solidária — Campos do Jordão, SP</p>
+      <p>Repositório: (adicione o link do GitHub)</p>
+    </div>
+  </footer>
 </body>
 </html>

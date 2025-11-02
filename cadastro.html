@@ -1,54 +1,108 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cadastro - Biblioteca Solidária</title>
-<link rel="stylesheet" href="css/style.css">
-<script src="js/script.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cadastro — Biblioteca Solidária</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-<header>
-<nav class="navbar">
-<a href="index.html" class="logo">Biblioteca Solidária</a>
-<button class="hamburger" id="hamburger">&#9776;</button>
-<ul class="nav-links" id="nav-links">
-<li><a href="index.html">Início</a></li>
-<li><a href="projetos.html">Projetos</a></li>
-<li><a href="cadastro.html">Cadastro</a></li>
-</ul>
-</nav>
-</header>
-<main>
-<section class="cadastro">
-<h1>Cadastre-se como doador ou voluntário</h1>
-<form id="formCadastro">
-<label>Nome Completo:</label>
-<input type="text" name="nome" required>
-<label>E-mail:</label>
-<input type="email" name="email" required>
-<label>CPF:</label>
-<input type="text" id="cpf" name="cpf" required maxlength="14">
-<label>Telefone:</label>
-<input type="text" id="telefone" name="telefone" required maxlength="15">
-<label>Data de Nascimento:</label>
-<input type="date" name="nascimento" required>
-<label>Endereço:</label>
-<input type="text" name="endereco" required>
-<label>CEP:</label>
-<input type="text" id="cep" name="cep" required maxlength="9">
-<label>Cidade:</label>
-<input type="text" name="cidade" required>
-<label>Estado:</label>
-<input type="text" name="estado" required>
-<button type="submit">Enviar Cadastro</button>
-</form>
-<p id="mensagem-sucesso" class="hidden">Cadastro enviado com sucesso!</p>
-</section>
-</main>
-<footer>
-<p>&copy; 2025 Biblioteca Solidária - Todos os direitos reservados.</p>
-</footer>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.webp" alt="Logo" class="logo">
+        <span class="brand-name">Biblioteca Solidária</span>
+      </a>
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Abrir menu" id="navToggle3">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+      <nav id="primary-navigation" class="main-nav" role="navigation">
+        <ul class="nav-links" role="menubar">
+          <li role="none"><a role="menuitem" href="index.html">Início</a></li>
+          <li role="none"><a role="menuitem" href="projetos.html">Projetos</a></li>
+          <li class="dropdown" role="none">
+            <a href="#" class="dropbtn" aria-haspopup="true">Mais ▾</a>
+            <ul class="dropdown-menu" aria-label="submenu" role="menu">
+              <li role="none"><a role="menuitem" href="index.html#sobre">Sobre</a></li>
+              <li role="none"><a role="menuitem" href="index.html#contato">Contato</a></li>
+            </ul>
+          </li>
+          <li role="none"><a role="menuitem" class="cta" href="cadastro.html" aria-current="page">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container grid">
+    <section class="card form-card grid-col-8" aria-labelledby="form-title">
+      <h1 id="form-title">Formulário de Cadastro</h1>
+      <form id="cadastroForm" action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <label for="nome">Nome completo *</label>
+          <input id="nome" name="nome" type="text" required minlength="3" maxlength="100" placeholder="João Silva">
+
+          <label for="email">E-mail *</label>
+          <input id="email" name="email" type="email" required placeholder="nome@exemplo.com">
+
+          <label for="cpf">CPF *</label>
+          <input id="cpf" name="cpf" type="text" inputmode="numeric" required pattern="(^\d{3}\.\d{3}\.\d{3}-\d{2}$)|(^\d{11}$)" placeholder="000.000.000-00">
+
+          <label for="telefone">Telefone *</label>
+          <input id="telefone" name="telefone" type="tel" required inputmode="tel" pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$" placeholder="(11) 99999-9999">
+
+          <label for="nascimento">Data de nascimento *</label>
+          <input id="nascimento" name="nascimento" type="date" required max="2007-12-31">
+        </fieldset>
+
+        <fieldset>
+          <legend>Endereço</legend>
+          <label for="cep">CEP *</label>
+          <input id="cep" name="cep" type="text" required pattern="(^\d{5}-\d{3}$)|(^\d{8}$)" placeholder="00000-000">
+
+          <label for="endereco">Endereço *</label>
+          <input id="endereco" name="endereco" type="text" required>
+
+          <label for="cidade">Cidade *</label>
+          <input id="cidade" name="cidade" type="text" required value="Campos do Jordão">
+
+          <label for="estado">Estado *</label>
+          <select id="estado" name="estado" required>
+            <option value="">Selecione</option>
+            <option value="SP" selected>SP</option>
+            <option value="RJ">RJ</option>
+            <option value="MG">MG</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferências</legend>
+          <label><input type="checkbox" name="interesse" value="voluntariado"> Tenho interesse em voluntariado</label>
+          <label><input type="checkbox" name="interesse" value="doar"> Quero doar livros</label>
+        </fieldset>
+
+        <p class="form-actions">
+          <button type="submit" class="btn">Enviar cadastro</button>
+          <button type="reset" class="btn btn-outline">Limpar</button>
+        </p>
+      </form>
+      <div id="form-feedback" class="alert hidden" role="status" aria-live="polite"></div>
+    </section>
+
+    <aside class="card grid-col-4" aria-labelledby="info-title">
+      <h2 id="info-title">Informações</h2>
+      <p>Preencha o formulário para participar como voluntário ou doar livros.</p>
+      <p><strong>Telefone:</strong> (11) 99678-0404</p>
+      <p><strong>E-mail:</strong> bibliotecasolidaria@gmail.com</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year3"></span> Biblioteca Solidária</p>
+    </div>
+  </footer>
 </body>
 </html>

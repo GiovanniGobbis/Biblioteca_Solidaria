@@ -1,0 +1,7 @@
+/* responsive.css */
+/* Responsive breakpoints (5) */
+@media (max-width:1200px){ .grid{grid-template-columns:repeat(8,1fr)} .cards{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:992px){ .grid{grid-template-columns:repeat(6,1fr)} .grid-col-8{grid-column:span 6} }
+@media (max-width:768px){ .grid{grid-template-columns:repeat(4,1fr)} .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:var(--white);flex-direction:column;padding:12px} .nav-links.active{display:flex} .cards{grid-template-columns:1fr} .hero-text{padding:12px} }
+@media (max-width:576px){ .grid{grid-template-columns:repeat(2,1fr)} .header-inner{padding:8px} .logo{width:44px} .project-card .card-img{height:140px} }
+@media (max-width:400px){ .grid{grid-template-columns:1fr} .hero-text h1{font-size:var(--font-lg)} }
