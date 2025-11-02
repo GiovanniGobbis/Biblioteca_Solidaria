@@ -5,7 +5,7 @@ Esta versão foca na **interface visual profissional, responsiva e acessível**,
 
 ---
 
-# Tecnologias Utilizadas
+# Tech Stack Utilizadas
 
 - HTML5 semântico  
 - CSS3 moderno (Flexbox e Grid)  
