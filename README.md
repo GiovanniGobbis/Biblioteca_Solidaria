@@ -1,36 +1,44 @@
-# Biblioteca Solidária — Entrega II (Final)
+# Biblioteca Solidária – Entrega 2
 
-Versão final aprimorada do projeto com design moderno (Inter), paleta azul suave, CSS modular e responsividade.
+Bem-vindo(a) ao projeto **Biblioteca Solidária**, desenvolvido como parte das atividades práticas de HTML5 e CSS3.  
+Esta segunda entrega foca na **melhoria visual e responsiva do projeto**, aplicando CSS moderno, layout flexível e design consistente.
 
-Arquivos:
-- index.html
-- projetos.html
-- cadastro.html
-- css/ (variables.css, layout.css, components.css, responsive.css, style.css)
-- js/script.js
-- images/ (placeholder images — substitua por imagens reais antes da entrega)
+---
 
-Como testar:
-1. Extraia a pasta.
-2. Abra no VS Code e instale Live Server.
-3. Abra index.html com Live Server e verifique em diferentes larguras.
+## 🎯 Objetivos desta entrega
 
-<<<<<<< HEAD
-Observação: os placeholders de imagem são pequenos; substitua por imagens reais (jpg/webp) na pasta images/.
-=======
-## Tecnologias
+- Transformar a estrutura HTML da Atividade 1 em uma **interface visual profissional**.  
+- Garantir que o site seja **responsivo e acessível** em diferentes dispositivos.  
+- Aplicar **sistema de design consistente**, incluindo cores, tipografia, espaçamento e componentes visuais.  
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
 - HTML5 semântico  
-- CSS3 responsivo  
-- JavaScript (máscaras e menu mobile)
+- CSS3 moderno (com Flexbox e Grid)  
+- JavaScript para interatividade (menu hambúrguer e máscaras de formulário)  
+- Google Fonts: [Inter](https://fonts.google.com/specimen/Inter)  
 
-## Como testar
-1. Abra o projeto no Visual Studio Code.
-2. Instale a extensão Live Server.
-3. Clique com o botão direito em `index.html` → “Open with Live Server”.
+---
 
-## Envio no GitHub
-1. Crie um repositório público chamado `biblioteca-solidaria`.
-2. Envie todos os arquivos e pastas.
-3. Copie o link do Repositório.
-   
->>>>>>> 35b18b2bdcb22cb88ef12361701c3b96a257edd0
+## 🎨 Sistema de Design
+
+- Paleta de cores suave (azul, branco e cinza claro)  
+- Tipografia hierárquica com 5 tamanhos de fonte  
+- Espaçamento modular (8px, 16px, 24px, 32px, 48px, 64px)  
+- Componentes estilizados: botões, cards, formulários, menus e emblemas  
+
+---
+
+## 📐 Layout e Responsividade
+
+- Layout principal usando **CSS Grid** (12 colunas)  
+- Componentes internos com **Flexbox**  
+- 5 pontos de interrupção (desktop, tablet, mobile, etc.)  
+- Menu principal com **dropdown** e **menu hambúrguer** para dispositivos móveis  
+
+---
+
+## 📂 Estrutura do projeto
+
