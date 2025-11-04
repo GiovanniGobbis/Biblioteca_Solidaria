@@ -1,36 +1,41 @@
-# Biblioteca Solidária — Entrega II (Final)
+# Biblioteca Solidária
 
-Versão final aprimorada do projeto com design moderno (Inter), paleta azul suave, CSS modular e responsividade.
+Projeto de uma **biblioteca solidária**, desenvolvido como atividade prática de HTML5 e CSS3.  
+Esta versão foca na **interface visual profissional, responsiva e acessível**, com design consistente e funcionalidades completas.
 
-Arquivos:
-- index.html
-- projetos.html
-- cadastro.html
-- css/ (variables.css, layout.css, components.css, responsive.css, style.css)
-- js/script.js
-- images/ (placeholder images — substitua por imagens reais antes da entrega)
+---
 
-Como testar:
-1. Extraia a pasta.
-2. Abra no VS Code e instale Live Server.
-3. Abra index.html com Live Server e verifique em diferentes larguras.
+# Tech Stack Utilizadas
 
-<<<<<<< HEAD
-Observação: os placeholders de imagem são pequenos; substitua por imagens reais (jpg/webp) na pasta images/.
-=======
-## Tecnologias
 - HTML5 semântico  
-- CSS3 responsivo  
-- JavaScript (máscaras e menu mobile)
+- CSS3 moderno (Flexbox e Grid)  
+- JavaScript para interatividade (menu hambúrguer, máscaras de formulário)  
+- Google Fonts: [Inter](https://fonts.google.com/specimen/Inter)  
 
-## Como testar
-1. Abra o projeto no Visual Studio Code.
-2. Instale a extensão Live Server.
-3. Clique com o botão direito em `index.html` → “Open with Live Server”.
+---
 
-## Envio no GitHub
-1. Crie um repositório público chamado `biblioteca-solidaria`.
-2. Envie todos os arquivos e pastas.
-3. Copie o link do Repositório.
-   
->>>>>>> 35b18b2bdcb22cb88ef12361701c3b96a257edd0
+## Sistema de Design
+
+- **Paleta de cores**: tons suaves de azul, branco e cinza claro, garantindo boa leitura e conforto visual.  
+- **Tipografia**: fonte Inter, com hierarquia de 5 tamanhos diferentes.  
+- **Espaçamento modular**: 8px, 16px, 24px, 32px, 48px, 64px.  
+- **Grid**: 12 colunas para organizar o layout de forma consistente e responsiva.  
+
+---
+
+## Funcionalidades
+
+- **Menu responsivo** com dropdown e hambúrguer para telas pequenas  
+- **Layout flexível** com CSS Grid (estrutura principal) e Flexbox (componentes internos)  
+- **Cards de projetos** com informações sobre voluntariado e doações  
+- **Formulário de cadastro** com:
+  - Campos: Nome completo, E-mail, CPF, Telefone, Data de nascimento, Endereço, CEP, Cidade e Estado  
+  - Máscaras de entrada: CPF, Telefone, CEP  
+  - Validação nativa HTML5 e feedback visual  
+- **Imagens otimizadas** para web e responsivas  
+- **Componentes interativos**: botões com hover/focus/active, alertas de feedback, tags e emblemas  
+
+---
+
+## Estrutura do Projeto
+
