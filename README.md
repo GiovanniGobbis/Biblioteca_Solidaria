@@ -1,1 +1,2 @@
 
+pagando readme antigo
