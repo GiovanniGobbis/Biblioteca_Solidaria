@@ -105,7 +105,7 @@ feat: implementação do modo alto contraste e ajustes responsivos
 ## 👨‍💻 Autor
 **Giovanni Gobbis**  
 Estudante de Ciência da Computação — São Paulo/SP  
-
+🔗 Site:(https://giovannigobbis.github.io/Biblioteca_Solidaria/)
 🔗 [GitHub](https://github.com/GiovanniGobbis)  
 🔗 [LinkedIn](https://www.linkedin.com/in/giovanni-gobbis-04071b2ab/)  
 
